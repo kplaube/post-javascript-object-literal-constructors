@@ -24,6 +24,9 @@ moto.quantidadeRodas = 2;
 console.log('quantidade de rodas (moto):', moto.quantidadeRodas); // 2
 console.log('quantidade de rodas (carro):', carro.quantidadeRodas); // 2
 
+// Comparando
+console.log('carro == moto:', carro == moto) // true
+
 
 // Criando a funcao Automovel
 console.log('-- constructor function --');
@@ -51,3 +54,13 @@ console.log('motor ligado:', carro.motorLigado); // true
 var moto = new constructor.Automovel(2);
 console.log('quantidade de rodas (moto):', moto.quantidadeRodas); // 2
 console.log('quantidade de rodas (carro):', carro.quantidadeRodas); // 4
+
+// Comparando
+console.log('carro == moto:', carro == moto); // false
+var moto2 = moto;
+moto2.quantidadeRodas = 3;
+console.log('quantidade de rodas (instancia carro):', carro.quantidadeRodas); // 4
+console.log('quantidade de rodas (instancia moto):', moto.quantidadeRodas); // 3
+console.log('quantidade de rodas (referencia moto2):', moto2.quantidadeRodas); // 3
+console.log('moto == moto2:', moto == moto2); // true
+
