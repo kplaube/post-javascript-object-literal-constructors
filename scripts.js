@@ -11,11 +11,12 @@ var object_literal = {
         }
     }
 };
-console.log('quantidade de rodas:', object_literal.Automovel.quantidadeRodas); // 4
+var automovel = object_literal.Automovel;
+console.log('quantidade de rodas:', automovel.quantidadeRodas); // 4
 
 // Ligar o motor
 object_literal.Automovel.ligarMotor();
-console.log('motor ligado:', object_literal.Automovel.motorLigado); // true
+console.log('motor ligado:', automovel.motorLigado); // true
 
 
 // Criando a funcao Automovel
